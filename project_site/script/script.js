@@ -1,0 +1,3 @@
+$('.fade').slick({
+    dots: true
+});
