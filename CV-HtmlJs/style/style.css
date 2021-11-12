@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.cv_wrapper {
+    height: 100vh;
+
+}
+
+.cv_wrapper-additional {
+    width: 100%;
+    height: 100vh;
+    background: #49b2ba;
+    display: flex;
+}
+
+.profile_column {
+    width: 40%;
+    height: 100vh;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_column-wrapper {
+    background: brown;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.profile_logo {
+    /*width: 170px;*/
+    /*border-radius: 100%;*/
+    width: 100%;
+}
+
+.profile_img-wrap {
+    margin: 20px auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about_me-descr {
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.about_biography {
+    margin-left: 15px;
+}
+
+.link_img {
+    width: 32px;
+}
+
+.links_wrapper {
+    margin-left: 15px;
+}
+
+.link_img.linked {
+    width: 64px;
+}
+
+.profile_social-links {
+    margin-top: 50px;
+}
+
+.link_wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    transition: .3s;
+}
+
+.comp_link {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.link_text {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+}
+
+.link_wrapper:hover {
+    background: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.description_column {
+    width: 70%;
+    height: 100vh;
+    background: purple;
+}
+
+.me_name {
+    padding: 10px;
+}
+
+
+.me_wrapper {
+    margin-top: 30px;
+
+}
+.skills_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stack_icon {
+    width: 80px;
+    display: block;
+    margin: 0 10px 0 10px;
+}
+
+
+.stack_technologies {
+    display: flex;
+    width: 350px;
+    margin: 40px auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+.my_skills {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.my_projects {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.my_project-wrap {
+    margin: 10px;
+    background: #49b2ba;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word; /* Перенос слов */
+
+}
+
+
+
+.project_title {
+    text-align: center;
+}
+
+
+.email_icon {
+    width: 32px;
+}
+
+.me_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rate_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    margin-top: 50px;
+}
+
+
+.checked {
+    color: orange;
+}
+
+.rate_wrapper {
+    margin: 30px auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+.my_project-wrap {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.project_window {
+    display: none;
+    z-index: 3;
+    width: 460px;
+    height: 200px;
+    position: fixed;
+    background: gray;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.project_window-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_window a {
+    margin-left: 20px;
+}
+
+.close_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cover_page {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #f5baba;
+    opacity: .7;
+}
+
+.my_project-wrap:hover {
+    background: purple;
+    transition: .5s;
+}
+
