@@ -1,0 +1,236 @@
+:root {
+  --primary-color: #f2c744;
+  --light: #f4f6f9;
+  --dark: #000;
+  --primary-font: 'Shadows Into Light', cursive;
+  --secondary-font: 'Dancing Script', cursive;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--secondary-font)
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.main_grid {
+  gap:20px;
+  /* min-height: 100%; */
+  display: grid;
+  grid-template-columns: minmax(230px, 740px) minmax(200px, 400px);
+  grid-template-rows: 2fr 8fr 1fr;
+
+
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  box-shadow: 10px 10px 20px grey;
+  display: grid;
+}
+
+.footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.photo_section-grid {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 223px) );
+  padding: 30px;
+  row-gap: 10px;
+  /* justify-content: center; */
+  box-shadow: 10px 10px 20px grey;
+
+}
+
+.biography_section {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  box-shadow: 10px 10px 20px grey;
+}
+
+.main_section {
+  min-height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: minmax(240px, 740px) minmax(200px, 400px);
+  grid-template-rows: 1fr 1fr;
+
+  /* grid-template-columns: repeat( auto-fit,  minmax(240px, 740px), minmax(200px, 400px) ); */
+
+
+  grid-auto-columns: minmax(200px, 400px);
+}
+
+.first_col , .second_col , .third_col {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(15, 50px);
+  row-gap: 10px;
+  
+}
+
+
+.photo_logo {
+  width: 100px;
+}
+
+.photo_logo, .header_name {
+  justify-self:center;
+  align-self: center;
+  display: block;
+}
+
+.header_descr {
+  justify-self: center;
+}
+
+.item {
+  width: 219px;
+  object-fit: cover;
+  
+overflow: hidden;
+}
+
+.first {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.second {
+  grid-row-start: 3;
+  grid-row-end: 8;
+}
+
+.third {
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+
+.fourth {
+  grid-row-start:12;
+  grid-row-end: 14;
+}
+
+.fifth {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+}
+
+.sixth {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+}
+
+.seventh {
+  grid-row-start:6;
+  grid-row-end: 9;
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+}
+
+.eight {
+  grid-row-start:9;
+  grid-row-end: 15;
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+}
+
+.ninth {
+  grid-row-start:1;
+  grid-row-end: 6;
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
+}
+
+.tenth {
+  grid-row-start:6;
+  grid-row-end: 9;
+
+}
+
+.eleventh {
+  grid-row-start:9;
+  grid-row-end: 15;
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
+}
+
+.circular--portrait {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin: 0 auto;
+  display: block; */
+  justify-self: center;
+}
+
+.biography_section {
+  display: grid;
+  padding: 15px;
+}
+
+
+.biography_name , .biography_descr{
+  justify-self:center;
+  /* align-self: center; */
+  display: block;
+}
+
+.first_lorem, .second_lorem {
+  /* justify-self: center;
+  display: block; */
+  text-align: center;
+}
+
+
+.icons_wrap {
+  justify-self: center;
+}
+
+.footer {
+  box-shadow: 10px 10px 20px grey;
+  display: grid;
+}
+
+
+.epam_systems {
+  justify-self: center;
+}
+
+/* .header_name.footer, .header_descr.footer {
+  font-size: 15px;
+} */
+
+.photo_logo.footer_nam {
+  width: 80px;
+}
